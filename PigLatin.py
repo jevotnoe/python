@@ -2,7 +2,7 @@ print 'Welcome to the Pig Latin Translator!'
 print
 # Start coding here!
 print '=====some rules================'
-print "Word doesn't containt a numbers"
+print "Word mustn't containt a numbers"
 print '==============================='
 print
 original = raw_input("Enter a word: ")
