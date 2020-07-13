@@ -1,0 +1,41 @@
+import re
+# pdf = bytes.fromhex(b'ONC\x00\x02\x00\x0fapplication/pdf\x00\x1d\xd0\x9a\xd0\xb8\xd1\x80\xd1\x8c\xd1\x8f\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xb0 \xd0\x95.\xd0\x9a..pdf\x01\x00\x01\x00\x00\x07\x00\x08\xe0\xb0\n\x05dm\xe5\x12\x81\xf9J\xb4b\xdfc\x1e\x92r\xd3\x04')
+# print(pdf)
+# pdf = (b'ONC\x00\x02\x00\x0fapplication/pdf\x00\x1d\xd0\x9a\xd0\xb8\xd1\x80\xd1\x8c\xd1\x8f\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xb0 \xd0\x95.\xd0\x9a..pdf\x01\x00\x01\x00\x00\x07\x00\x08\xe0\xb0\n\x05dm\xe5\x12\x81\xf9J\xb4b\xdfc\x1e\x92r\xd3\x04').hex()
+# pdf = '4F4E430002000F6170706C69636174696F6E2F706466001B646F6331313631353932303139303531353133343334342E706466010001000007000BEE360AFB36BAE02D7F6C408B4CAD326C86F38804'
+# тестовый файл для работы
+# mod_pdf = re.sub(".*706466", 'bebebe', pdf)
+# print(mod_pdf)
+#pdf = '1BD09CD0B0D180D182D0B5D0BCD18CD18FD0BDD0BED0B22E646F6037'#8010001000007006208F70A5EE7A9BB319A68488DFEDA9D96D032F204'
+pdf = '4F4E430002000A696D6167652F6A706567001A466F6C64657228323031382D352D313029303030312E4A504547'
+odf = '360A'
+cdf = '1ED09FD0B0D181D0BFD0BED180D18220D093D0BED180D0B8D0BD2E646F6378010001000007006D99130AD0C8C770F75EAB4A93652BF8393ED7B304'
+#3E -
+#504446 - PDF
+#706466 - pdf
+#2E - .
+# mdf = 'BA'
+# mdf = '2D7F6C40'
+# mdf = '4C'
+# mdf = '326C'
+mdf = '04'
+
+# EE
+#FB
+#
+# print(pdf)
+# F20AF8D8CFE072FBD348A5D201C395D343DF04
+# pdf2 = re.sub('4F4E430002000F6170706C69636174696F6E2F70646600|4F4E430002000F6170706C69636174696F6E2F706466001', '', pdf)
+# pdf2 = re.sub('4f4e', '', str.upper(pdf))
+# pdf3 = bytes.fromhex(pdf).decode('utf8')
+# for elem in pdf:
+#     print(elem+next(pdf))
+#     print(elem+next(pdf))
+    # bytes.fromhex(elem).decode('utf8')
+pdf5 = bytes.fromhex(pdf).decode('utf8')
+print(pdf5)
+# pdf6 = bytes.fromhex(mdf).decode('utf8')
+# print(pdf3)
+# print(pdf4)
+# print(pdf5)
+# print(pdf4)
